@@ -2,6 +2,8 @@ import { useState, useRef } from 'react';
 import ItensTarefas from './itensTarefas';
 
 
+
+
 function App() {
   const [listaDeTarefas, setListaDeTarefas] = useState([]);
 
@@ -23,8 +25,8 @@ function App() {
 
 
   return (
-    <>
-      <h1>Lista de Tarefas</h1>
+    <div>
+      <h1 className='text-6xl'>Lista de Tarefas</h1>
       <input ref={inputAdicionar} type="text" placeholder='Escreva uma tarefa' />
       <button onClick={() => adicionarTarefas()}>Adicionar</button>
 
@@ -45,7 +47,7 @@ function App() {
       )}
 
 
-    </>
+    </div>
   );
 
 
