@@ -17,9 +17,9 @@ const ItensTarefas = ({ itens, listaDeTarefas, setListaDeTarefas}) => {
 
 
     return (
-        <li>
+        <li className='flex justify-between gap-2'>
             <p>{itens}</p>
-            <button onClick={() => removerTarefas()}>Remover</button>
+            <button className='rounded-md bg-red-800 text-white transition px-2 cursor-pointer hover:bg-gray-600' onClick={() => removerTarefas()}>Remover</button>
         </li>
     )
 };
